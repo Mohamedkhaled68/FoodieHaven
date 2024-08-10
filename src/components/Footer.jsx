@@ -37,7 +37,7 @@ const Footer = () => {
                                 adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Ut
                                 enim ad minim veniam, quis nostrud exercitation
-                                ullamco labo.
+                                ullamco labo
                             </p>
                             <div className="mt-4 flex space-x-6">
                                 <div className="text-gray-400 hover:text-gray-500">

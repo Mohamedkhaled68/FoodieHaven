@@ -181,10 +181,10 @@ const SubMenu = () => {
                     Explore our Menu
                 </h1>
                 <p className="text-lg || font-zain font-semibold || w-[70%] || mb-5">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Nobis aliquam perspiciatis pariatur, similique ut incidunt
-                    voluptates animi delectus porro, labore deleniti error neque
-                    ipsa, dignissimos suscipit maiores non beatae cum?
+                    Choose from a diverse menu featuring a delectable array of
+                    dishes crafted with the finest ingredients to satisfy your
+                    cravings and elevate your dining experience, one delicious
+                    meal at a time!
                 </p>
                 <Swiper
                     spaceBetween={10}

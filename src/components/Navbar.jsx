@@ -16,14 +16,16 @@ const Navbar = () => {
                 <div className="flex justify-between items-center || py-4 || md:px-0">
                     <Link
                         to={"/"}
-                        className="text-3xl text-accent || font-signika font-semibold"
+                        className="text-xl md:text-2xl lg:text-3xl text-accent || font-signika font-semibold"
                     >
                         FoodieHaven
                     </Link>
                     <ul className="hidden || md:flex items-center justify-between gap-6 || font-zain font-semibold || text-xl">
                         <NavLink
                             className={({ isActive }) =>
-                                isActive ? "border-b-2 border-accent" : ""
+                                isActive
+                                    ? "border-b-2 border-accent transition duration-300 ease-in-out"
+                                    : "border-b-0 transition duration-300 ease-in-out"
                             }
                             to={"/"}
                         >
@@ -31,7 +33,9 @@ const Navbar = () => {
                         </NavLink>
                         <NavLink
                             className={({ isActive }) =>
-                                isActive ? "border-b-2 border-accent" : ""
+                                isActive
+                                    ? "border-b-2 border-accent transition duration-300 ease-in-out"
+                                    : "border-b-0 transition duration-300 ease-in-out"
                             }
                             to={"/menu"}
                         >
@@ -39,7 +43,9 @@ const Navbar = () => {
                         </NavLink>
                         <NavLink
                             className={({ isActive }) =>
-                                isActive ? "border-b-2 border-accent" : ""
+                                isActive
+                                    ? "border-b-2 border-accent transition duration-300 ease-in-out"
+                                    : "border-b-0 transition duration-300 ease-in-out"
                             }
                             to={"/profile"}
                         >
@@ -47,7 +53,9 @@ const Navbar = () => {
                         </NavLink>
                         <NavLink
                             className={({ isActive }) =>
-                                isActive ? "border-b-2 border-accent" : ""
+                                isActive
+                                    ? "border-b-2 border-accent transition duration-300 ease-in-out"
+                                    : "border-b-0 transition duration-300 ease-in-out"
                             }
                             to={"/about"}
                         >

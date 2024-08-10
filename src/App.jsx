@@ -6,7 +6,7 @@ import { Route, Routes } from "react-router-dom";
 const App = () => {
     return (
         <>
-            <div className="container mx-auto px-4 md:px-0">
+            <div className="container mx-auto px-4 md:px-2">
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />} />
@@ -16,7 +16,7 @@ const App = () => {
                     <Route path="/cart" element={<Cart />} />
                 </Routes>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 };

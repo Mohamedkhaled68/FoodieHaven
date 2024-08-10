@@ -1,5 +1,4 @@
 import React from "react";
-import { headerImg } from "../assets";
 import { Link } from "react-router-dom";
 const Header = () => {
     const styles = {
@@ -7,17 +6,16 @@ const Header = () => {
     };
     return (
         <>
-            <div className="w-full max-h-[350px] md:min-h-[450px] || rounded-lg || relative || bg-header bg-cover bg-center || flex items-center || py-2 px-4">
+            <div className="w-full max-h-[350px] md:min-h-[480px] || rounded-lg || relative || bg-header bg-cover bg-center || flex items-center || py-2 px-2 md:px-[2rem] lg:px-[5rem]">
                 <div className="flex flex-col justify-center gap-3 md:gap-10 || text-white">
-                    <h1 className="text-2xl md:text-6xl || font-semibold || md:w-[50%]">
-                        Order your favorite food here
+                    <h1 className="text-2xl md:text-6xl || font-semibold || md:w-[50%] || flex flex-col gap-5">
+                        <span>Order your favorite</span> <spna>food here</spna>
                     </h1>
-                    <p className="text-sm md:text-base || font-semibold || md:w-[70%]">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Molestias sed, ipsa blanditiis consectetur explicabo
-                        fuga esse. Doloremque incidunt suscipit officiis,
-                        molestiae cum distinctio nemo praesentium inventore
-                        nesciunt ducimus! Saepe veniam aperiam ducimus?
+                    <p className="text-sm md:text-base || font-semibold || md:w-[60%]">
+                        Choose from a diverse menu featuring a delectable array
+                        of dishes crafted with the finest ingredients to satisfy
+                        your cravings and elevate your dining experience, one
+                        delicious meal at a time!
                     </p>
                     <Link to={"/menu"} className={styles.btns}>
                         View Menu
