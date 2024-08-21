@@ -9,7 +9,7 @@ const Header = () => {
             <div className="w-full max-h-[350px] md:min-h-[480px] || rounded-lg || relative || bg-header bg-cover bg-center || flex items-center || py-2 px-2 md:px-[2rem] lg:px-[5rem]">
                 <div className="flex flex-col justify-center gap-3 md:gap-10 || text-white">
                     <h1 className="text-2xl md:text-6xl || font-semibold || md:w-[50%] || flex flex-col gap-5">
-                        <span>Order your favorite</span> <spna>food here</spna>
+                        <span>Order your favorite</span> <span>food here</span>
                     </h1>
                     <p className="text-sm md:text-base || font-semibold || md:w-[60%]">
                         Choose from a diverse menu featuring a delectable array

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
+import useGetMenuItems from "../hooks/useGetMenuItems";
+import useGetMenuCategories from "../hooks/useGetMenuCategories";
 
 const meals = [
     {
@@ -116,64 +118,54 @@ const meals = [
             "A creamy pasta dish made with tender chicken and rich Alfredo sauce.",
     },
     {
-        name: "Chicken Alfredo",
+        name: "Shrimp Scampi",
         ingredients: [
-            "fettuccine",
-            "chicken breast",
-            "heavy cream",
-            "parmesan cheese",
+            "shrimp",
             "garlic",
             "butter",
+            "lemon juice",
+            "white wine",
             "parsley",
+            "angel hair pasta",
         ],
         description:
-            "A creamy pasta dish made with tender chicken and rich Alfredo sauce.",
+            "A classic Italian-American dish with shrimp cooked in a garlic butter sauce and served over pasta.",
     },
     {
-        name: "Chicken Alfredo",
+        name: "Beef Stew",
         ingredients: [
-            "fettuccine",
-            "chicken breast",
-            "heavy cream",
-            "parmesan cheese",
-            "garlic",
-            "butter",
-            "parsley",
+            "beef chunks",
+            "potatoes",
+            "carrots",
+            "onions",
+            "celery",
+            "beef broth",
+            "tomato paste",
         ],
         description:
-            "A creamy pasta dish made with tender chicken and rich Alfredo sauce.",
+            "A hearty and comforting stew made with tender beef and vegetables simmered in a rich broth.",
     },
     {
-        name: "Chicken Alfredo",
+        name: "Greek Salad",
         ingredients: [
-            "fettuccine",
-            "chicken breast",
-            "heavy cream",
-            "parmesan cheese",
-            "garlic",
-            "butter",
-            "parsley",
+            "cucumbers",
+            "tomatoes",
+            "red onions",
+            "olives",
+            "feta cheese",
+            "olive oil",
+            "oregano",
         ],
         description:
-            "A creamy pasta dish made with tender chicken and rich Alfredo sauce.",
-    },
-    {
-        name: "Chicken Alfredo",
-        ingredients: [
-            "fettuccine",
-            "chicken breast",
-            "heavy cream",
-            "parmesan cheese",
-            "garlic",
-            "butter",
-            "parsley",
-        ],
-        description:
-            "A creamy pasta dish made with tender chicken and rich Alfredo sauce.",
+            "A fresh and vibrant salad featuring traditional Greek ingredients and a simple olive oil dressing.",
     },
 ];
 
 const SubMenu = () => {
+    const { data: m, error, isLoading } = useGetMenuCategories();
+
+    console.log(m);
+
     return (
         <>
             <div className="py-[2rem] || border-b  border-slate-400">
@@ -186,37 +178,48 @@ const SubMenu = () => {
                     cravings and elevate your dining experience, one delicious
                     meal at a time!
                 </p>
-                <Swiper
-                    spaceBetween={10}
-                    slidesPerView={8}
-                    breakpoints={{
-                        400: {
-                            slidesPerView: 2,
-                            spaceBetween: 10,
-                        },
-                        480: {
-                            slidesPerView: 3,
-                            spaceBetween: 40,
-                        },
-                        768: {
-                            slidesPerView: 5,
-                            spaceBetween: 40,
-                        },
-                        1024: {
-                            slidesPerView: 8,
-                            spaceBetween: 50,
-                        },
-                    }}
-                    className="mySwiper || flex items-center justify-around || cursor-grab"
-                >
-                    {meals.map((meal) => (
-                        <SwiperSlide key={meal.name}>
-                            <div className="w-[130px] h-[130px] || rounded-full || flex justify-center items-center || bg-slate-400">
-                                <p className="text-center">{meal.name}</p>
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+                {isLoading ? (
+                    <h1>Loading ...</h1>
+                ) : (
+                    <Swiper
+                        spaceBetween={10}
+                        slidesPerView={8}
+                        breakpoints={{
+                            400: {
+                                slidesPerView: 2,
+                                spaceBetween: 10,
+                            },
+                            480: {
+                                slidesPerView: 3,
+                                spaceBetween: 40,
+                            },
+                            768: {
+                                slidesPerView: 5,
+                                spaceBetween: 40,
+                            },
+                            1024: {
+                                slidesPerView: 8,
+                                spaceBetween: 50,
+                            },
+                        }}
+                        className="mySwiper || flex items-center justify-around || cursor-grab"
+                    >
+                        {m.categories.map((meal) => (
+                            <SwiperSlide key={meal.idCategory}>
+                                <div className="w-[130px] h-[130px] || relative || rounded-full || flex justify-center items-center || bg-slate-400">
+                                    <p className="text-center">
+                                        {meal.strCategory}
+                                    </p>
+                                    <img
+                                        className="absolute top-0 left-0 max-w-[100%] object-cover"
+                                        src={meal.strCategoryThumb}
+                                        alt={meal.strCategory}
+                                    />
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                )}
             </div>
         </>
     );

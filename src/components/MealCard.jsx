@@ -1,10 +1,11 @@
 import React from "react";
+import Rating from "./Rating";
 
 const MealCard = ({ image, name, description, price }) => {
     return (
         <>
-            <div className="w-[400px] md:w-[250px] lg:w-[300px] || rounded-md || overflow-hidden || bg-white || shadow-md || pb-2">
-                <div className="w-full h-[60%]">
+            <div className="max-w-[500px] || rounded-md || overflow-hidden || bg-white || shadow-md || pb-2">
+                <div className="w-full">
                     <img
                         className="object-cover || w-full h-full"
                         src={image}
@@ -16,7 +17,9 @@ const MealCard = ({ image, name, description, price }) => {
                         <h2 className="text-2xl || font-zain font-semibold">
                             {name}
                         </h2>
-                        <span>rating</span>
+                        <div>
+                            <Rating />
+                        </div>
                     </div>
                     <p className="text-base text-slate-500">{description}</p>
                     <p className="text-accent text-xl || font-semibold">
