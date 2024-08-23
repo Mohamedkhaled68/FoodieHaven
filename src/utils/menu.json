@@ -1,0 +1,677 @@
+[
+    {
+        "category": "Beef",
+        "meals": [
+            {
+                "id": 1,
+                "name": "Beef Steak",
+                "ingredients": [
+                    "beef",
+                    "salt",
+                    "pepper",
+                    "butter",
+                    "garlic",
+                    "rosemary"
+                ],
+                "price": "25",
+                "description": "A perfectly grilled beef steak seasoned with herbs and spices.",
+                "image": "https://images.pexels.com/photos/675951/pexels-photo-675951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 2,
+                "name": "Beef Burger",
+                "ingredients": [
+                    "ground beef",
+                    "bun",
+                    "lettuce",
+                    "tomato",
+                    "cheese",
+                    "onion"
+                ],
+                "price": "15",
+                "description": "A juicy beef burger with fresh toppings.",
+                "image": "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 3,
+                "name": "Beef Tacos",
+                "ingredients": [
+                    "ground beef",
+                    "taco shells",
+                    "lettuce",
+                    "cheese",
+                    "tomato",
+                    "sour cream"
+                ],
+                "price": "12",
+                "description": "Crispy tacos filled with seasoned beef and fresh vegetables.",
+                "image": "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+        ]
+    },
+    {
+        "category": "Chicken",
+        "meals": [
+            {
+                "id": 4,
+                "name": "Grilled Chicken",
+                "ingredients": [
+                    "chicken breast",
+                    "olive oil",
+                    "lemon",
+                    "garlic",
+                    "herbs"
+                ],
+                "price": "18",
+                "description": "Tender grilled chicken breast with a zesty lemon garlic marinade.",
+                "image": "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 5,
+                "name": "Chicken Curry",
+                "ingredients": [
+                    "chicken",
+                    "coconut milk",
+                    "spices",
+                    "onion",
+                    "garlic",
+                    "ginger"
+                ],
+                "price": "20",
+                "description": "A flavorful chicken curry with a creamy coconut milk base.",
+                "image": "https://images.pexels.com/photos/675951/pexels-photo-675951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 6,
+                "name": "Chicken Salad",
+                "ingredients": [
+                    "chicken breast",
+                    "lettuce",
+                    "tomatoes",
+                    "cucumbers",
+                    "vinaigrette"
+                ],
+                "price": "15",
+                "description": "A fresh salad topped with grilled chicken.",
+                "image": "https://images.pexels.com/photos/3874343/pexels-photo-3874343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+        ]
+    },
+    {
+        "category": "Dessert",
+        "meals": [
+            {
+                "id": 7,
+                "name": "Chocolate Cake",
+                "ingredients": [
+                    "flour",
+                    "cocoa powder",
+                    "sugar",
+                    "eggs",
+                    "butter",
+                    "vanilla"
+                ],
+                "price": "12",
+                "description": "A rich and moist chocolate cake topped with creamy frosting.",
+                "image": "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 8,
+                "name": "Cheesecake",
+                "ingredients": [
+                    "cream cheese",
+                    "graham crackers",
+                    "sugar",
+                    "eggs",
+                    "vanilla"
+                ],
+                "price": "14",
+                "description": "A classic creamy cheesecake with a graham cracker crust.",
+                "image": "https://images.pexels.com/photos/3874343/pexels-photo-3874343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 9,
+                "name": "Tiramisu",
+                "ingredients": [
+                    "ladyfingers",
+                    "espresso",
+                    "mascarpone cheese",
+                    "cocoa powder",
+                    "sugar"
+                ],
+                "price": "16",
+                "description": "An Italian dessert with layers of coffee-soaked ladyfingers and mascarpone.",
+                "image": "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+        ]
+    },
+    {
+        "category": "Lamb",
+        "meals": [
+            {
+                "id": 10,
+                "name": "Lamb Chops",
+                "ingredients": [
+                    "lamb chops",
+                    "rosemary",
+                    "garlic",
+                    "olive oil",
+                    "salt",
+                    "pepper"
+                ],
+                "price": "30",
+                "description": "Tender lamb chops seasoned with rosemary and garlic.",
+                "image": "https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 11,
+                "name": "Lamb Stew",
+                "ingredients": [
+                    "lamb chunks",
+                    "potatoes",
+                    "carrots",
+                    "onions",
+                    "beef broth",
+                    "thyme"
+                ],
+                "price": "28",
+                "description": "A hearty stew with tender lamb and root vegetables.",
+                "image": "https://images.pexels.com/photos/1374508/pexels-photo-1374508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 12,
+                "name": "Lamb Kebab",
+                "ingredients": [
+                    "ground lamb",
+                    "onions",
+                    "spices",
+                    "yogurt",
+                    "pita bread"
+                ],
+                "price": "22",
+                "description": "Grilled lamb kebabs served with pita bread and yogurt sauce.",
+                "image": "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+        ]
+    },
+    {
+        "category": "Miscellaneous",
+        "meals": [
+            {
+                "id": 13,
+                "name": "Quiche",
+                "ingredients": [
+                    "eggs",
+                    "cream",
+                    "cheese",
+                    "spinach",
+                    "pie crust"
+                ],
+                "price": "14",
+                "description": "A savory quiche with a flaky crust.",
+                "image": "https://images.pexels.com/photos/248444/pexels-photo-248444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 14,
+                "name": "Stuffed Peppers",
+                "ingredients": [
+                    "bell peppers",
+                    "ground beef",
+                    "rice",
+                    "tomato sauce",
+                    "cheese"
+                ],
+                "price": "16",
+                "description": "Bell peppers stuffed with a savory mix of beef, rice, and cheese.",
+                "image": "https://images.pexels.com/photos/675951/pexels-photo-675951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 15,
+                "name": "Falafel",
+                "ingredients": [
+                    "chickpeas",
+                    "onions",
+                    "garlic",
+                    "cumin",
+                    "cilantro"
+                ],
+                "price": "10",
+                "description": "Crispy fried falafel balls served with pita bread and tahini sauce.",
+                "image": "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+        ]
+    },
+    {
+        "category": "Pasta",
+        "meals": [
+            {
+                "id": 16,
+                "name": "Spaghetti Bolognese",
+                "ingredients": [
+                    "spaghetti",
+                    "ground beef",
+                    "tomato sauce",
+                    "onions",
+                    "garlic",
+                    "carrots"
+                ],
+                "price": "18",
+                "description": "A classic Italian pasta dish with a rich meat sauce.",
+                "image": "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 17,
+                "name": "Fettuccine Alfredo",
+                "ingredients": [
+                    "fettuccine",
+                    "butter",
+                    "parmesan cheese",
+                    "cream",
+                    "garlic"
+                ],
+                "price": "20",
+                "description": "Creamy fettuccine pasta with a buttery parmesan sauce.",
+                "image": "https://images.pexels.com/photos/248444/pexels-photo-248444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 18,
+                "name": "Lasagna",
+                "ingredients": [
+                    "lasagna noodles",
+                    "ground beef",
+                    "ricotta cheese",
+                    "tomato sauce",
+                    "mozzarella cheese"
+                ],
+                "price": "22",
+                "description": "Layered lasagna with a rich meat sauce and creamy cheese.",
+                "image": "https://images.pexels.com/photos/1374508/pexels-photo-1374508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+        ]
+    },
+    {
+        "category": "Pork",
+        "meals": [
+            {
+                "id": 19,
+                "name": "Pulled Pork Sandwich",
+                "ingredients": [
+                    "pork shoulder",
+                    "bbq sauce",
+                    "bun",
+                    "coleslaw",
+                    "pickles"
+                ],
+                "price": "15",
+                "description": "Slow-cooked pulled pork served on a bun with tangy coleslaw.",
+                "image": "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 20,
+                "name": "Pork Chops",
+                "ingredients": [
+                    "pork chops",
+                    "apples",
+                    "onions",
+                    "thyme",
+                    "butter"
+                ],
+                "price": "18",
+                "description": "Juicy pork chops served with caramelized apples and onions.",
+                "image": "https://images.pexels.com/photos/1374508/pexels-photo-1374508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 21,
+                "name": "Pork Ribs",
+                "ingredients": [
+                    "pork ribs",
+                    "bbq sauce",
+                    "garlic",
+                    "onions",
+                    "spices"
+                ],
+                "price": "22",
+                "description": "Tender pork ribs glazed with a sweet and smoky BBQ sauce.",
+                "image": "https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+        ]
+    },
+    {
+        "category": "Seafood",
+        "meals": [
+            {
+                "id": 22,
+                "name": "Grilled Salmon",
+                "ingredients": [
+                    "salmon",
+                    "lemon",
+                    "dill",
+                    "garlic",
+                    "olive oil"
+                ],
+                "price": "25",
+                "description": "Grilled salmon fillet with a zesty lemon dill marinade.",
+                "image": "https://images.pexels.com/photos/3874343/pexels-photo-3874343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 23,
+                "name": "Shrimp Scampi",
+                "ingredients": [
+                    "shrimp",
+                    "garlic",
+                    "butter",
+                    "white wine",
+                    "lemon",
+                    "parsley"
+                ],
+                "price": "22",
+                "description": "Succulent shrimp cooked in a garlic butter sauce with a hint of lemon.",
+                "image": "https://images.pexels.com/photos/675951/pexels-photo-675951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 24,
+                "name": "Fish Tacos",
+                "ingredients": [
+                    "white fish",
+                    "taco shells",
+                    "cabbage",
+                    "lime",
+                    "avocado",
+                    "sour cream"
+                ],
+                "price": "18",
+                "description": "Crispy fish tacos with fresh cabbage slaw and a zesty lime sauce.",
+                "image": "https://images.pexels.com/photos/248444/pexels-photo-248444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+        ]
+    },
+    {
+        "category": "Side",
+        "meals": [
+            {
+                "id": 25,
+                "name": "Garlic Mashed Potatoes",
+                "ingredients": [
+                    "potatoes",
+                    "garlic",
+                    "butter",
+                    "cream",
+                    "salt",
+                    "pepper"
+                ],
+                "price": "8",
+                "description": "Creamy mashed potatoes infused with roasted garlic.",
+                "image": "https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 26,
+                "name": "Steamed Vegetables",
+                "ingredients": [
+                    "broccoli",
+                    "carrots",
+                    "green beans",
+                    "salt",
+                    "pepper"
+                ],
+                "price": "6",
+                "description": "A healthy mix of steamed seasonal vegetables.",
+                "image": "https://images.pexels.com/photos/1374508/pexels-photo-1374508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 27,
+                "name": "Mac and Cheese",
+                "ingredients": [
+                    "macaroni",
+                    "cheddar cheese",
+                    "milk",
+                    "butter",
+                    "flour"
+                ],
+                "price": "10",
+                "description": "Classic macaroni and cheese with a rich and creamy sauce.",
+                "image": "https://images.pexels.com/photos/3874343/pexels-photo-3874343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+        ]
+    },
+    {
+        "category": "Starter",
+        "meals": [
+            {
+                "id": 28,
+                "name": "Bruschetta",
+                "ingredients": [
+                    "baguette",
+                    "tomatoes",
+                    "basil",
+                    "garlic",
+                    "olive oil",
+                    "balsamic vinegar"
+                ],
+                "price": "8",
+                "description": "Crispy baguette slices topped with a fresh tomato basil mixture.",
+                "image": "https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 29,
+                "name": "Caesar Salad",
+                "ingredients": [
+                    "romaine lettuce",
+                    "croutons",
+                    "parmesan cheese",
+                    "caesar dressing"
+                ],
+                "price": "10",
+                "description": "A classic Caesar salad with crispy croutons and tangy dressing.",
+                "image": "https://images.pexels.com/photos/248444/pexels-photo-248444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 30,
+                "name": "Stuffed Mushrooms",
+                "ingredients": [
+                    "mushrooms",
+                    "cream cheese",
+                    "breadcrumbs",
+                    "garlic",
+                    "herbs"
+                ],
+                "price": "12",
+                "description": "Bite-sized mushrooms stuffed with a creamy garlic herb filling.",
+                "image": "https://images.pexels.com/photos/675951/pexels-photo-675951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+        ]
+    },
+    {
+        "category": "Vegan",
+        "meals": [
+            {
+                "id": 31,
+                "name": "Vegan Burrito",
+                "ingredients": [
+                    "tortilla",
+                    "black beans",
+                    "rice",
+                    "avocado",
+                    "tomato",
+                    "lettuce"
+                ],
+                "price": "12",
+                "description": "A hearty vegan burrito packed with beans, rice, and fresh vegetables.",
+                "image": "https://images.pexels.com/photos/1374508/pexels-photo-1374508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 32,
+                "name": "Vegan Pizza",
+                "ingredients": [
+                    "pizza dough",
+                    "tomato sauce",
+                    "vegan cheese",
+                    "bell peppers",
+                    "onions",
+                    "olives"
+                ],
+                "price": "15",
+                "description": "A delicious pizza topped with vegan cheese and fresh vegetables.",
+                "image": "https://images.pexels.com/photos/3874343/pexels-photo-3874343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 33,
+                "name": "Vegan Tacos",
+                "ingredients": [
+                    "taco shells",
+                    "black beans",
+                    "lettuce",
+                    "tomato",
+                    "avocado",
+                    "salsa"
+                ],
+                "price": "10",
+                "description": "Crispy vegan tacos filled with a flavorful bean and veggie mix.",
+                "image": "https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+        ]
+    },
+    {
+        "category": "Vegetarian",
+        "meals": [
+            {
+                "id": 34,
+                "name": "Vegetarian Lasagna",
+                "ingredients": [
+                    "lasagna noodles",
+                    "ricotta cheese",
+                    "tomato sauce",
+                    "spinach",
+                    "mozzarella cheese"
+                ],
+                "price": "18",
+                "description": "A rich and cheesy lasagna with layers of spinach and tomato sauce.",
+                "image": "https://images.pexels.com/photos/248444/pexels-photo-248444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 35,
+                "name": "Vegetarian Stir Fry",
+                "ingredients": [
+                    "broccoli",
+                    "carrots",
+                    "bell peppers",
+                    "soy sauce",
+                    "ginger",
+                    "garlic"
+                ],
+                "price": "16",
+                "description": "A colorful stir fry with a mix of fresh vegetables and a savory sauce.",
+                "image": "https://images.pexels.com/photos/1374508/pexels-photo-1374508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 36,
+                "name": "Vegetarian Chili",
+                "ingredients": [
+                    "beans",
+                    "tomatoes",
+                    "onions",
+                    "bell peppers",
+                    "chili powder",
+                    "garlic"
+                ],
+                "price": "14",
+                "description": "A hearty and spicy chili made with beans and fresh vegetables.",
+                "image": "https://images.pexels.com/photos/3874343/pexels-photo-3874343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+        ]
+    },
+    {
+        "category": "Breakfast",
+        "meals": [
+            {
+                "id": 37,
+                "name": "Pancakes",
+                "ingredients": [
+                    "flour",
+                    "milk",
+                    "eggs",
+                    "butter",
+                    "maple syrup"
+                ],
+                "price": "10",
+                "description": "Fluffy pancakes served with butter and maple syrup.",
+                "image": "https://images.pexels.com/photos/1374508/pexels-photo-1374508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 38,
+                "name": "Omelette",
+                "ingredients": [
+                    "eggs",
+                    "cheese",
+                    "mushrooms",
+                    "spinach",
+                    "tomatoes"
+                ],
+                "price": "12",
+                "description": "A classic omelette filled with cheese and fresh vegetables.",
+                "image": "https://images.pexels.com/photos/3874343/pexels-photo-3874343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 39,
+                "name": "French Toast",
+                "ingredients": [
+                    "bread",
+                    "eggs",
+                    "milk",
+                    "cinnamon",
+                    "maple syrup"
+                ],
+                "price": "10",
+                "description": "Golden brown French toast served with a sprinkle of cinnamon and maple syrup.",
+                "image": "https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+        ]
+    },
+    {
+        "category": "Goat",
+        "meals": [
+            {
+                "id": 40,
+                "name": "Goat Curry",
+                "ingredients": [
+                    "goat meat",
+                    "onions",
+                    "tomatoes",
+                    "garlic",
+                    "ginger",
+                    "spices"
+                ],
+                "price": "22",
+                "description": "A rich and flavorful curry made with tender goat meat and aromatic spices.",
+                "image": "https://images.pexels.com/photos/1374508/pexels-photo-1374508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 41,
+                "name": "Goat Stew",
+                "ingredients": [
+                    "goat meat",
+                    "carrots",
+                    "potatoes",
+                    "onions",
+                    "herbs"
+                ],
+                "price": "20",
+                "description": "A hearty stew made with tender goat meat and fresh vegetables.",
+                "image": "https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+                "id": 42,
+                "name": "Grilled Goat Chops",
+                "ingredients": [
+                    "goat chops",
+                    "rosemary",
+                    "garlic",
+                    "olive oil",
+                    "lemon"
+                ],
+                "price": "24",
+                "description": "Juicy grilled goat chops marinated with rosemary and garlic.",
+                "image": "https://images.pexels.com/photos/3874343/pexels-photo-3874343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+        ]
+    }
+]

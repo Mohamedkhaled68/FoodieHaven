@@ -9,6 +9,7 @@ export default {
             fontFamily: {
                 signika: ["Signika Negative", "sans-serif"],
                 zain: ["Zain", "sans-serif"],
+                anton: ["Anton SC", "sans-serif"],
             },
             backgroundImage: {
                 header: "url('/src/assets/images/header.png')",

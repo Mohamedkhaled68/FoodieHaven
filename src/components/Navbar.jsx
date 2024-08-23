@@ -16,7 +16,7 @@ const Navbar = () => {
                 <div className="flex justify-between items-center || py-4 || md:px-0">
                     <Link
                         to={"/"}
-                        className="text-xl md:text-2xl lg:text-3xl text-accent || font-signika font-semibold"
+                        className="text-2xl md:text-3xl text-accent || font-signika font-semibold"
                     >
                         FoodieHaven
                     </Link>

@@ -4,7 +4,7 @@ import Rating from "./Rating";
 const MealCard = ({ image, name, description, price }) => {
     return (
         <>
-            <div className="max-w-[500px] || rounded-md || overflow-hidden || bg-white || shadow-md || pb-2">
+            <div className="max-w-[400px] || rounded-md || overflow-hidden || bg-white || shadow-lg || hover:translate-y-[2%] ease-in-out duration-300 || pb-2">
                 <div className="w-full">
                     <img
                         className="object-cover || w-full h-full"

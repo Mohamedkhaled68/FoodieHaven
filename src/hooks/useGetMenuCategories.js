@@ -3,7 +3,7 @@ import axios from "axios";
 
 const useGetMenuCategories = () => {
     const { data, error, isLoading } = useQuery({
-        queryKey: ["menu-items"],
+        queryKey: ["menu-categories"],
         queryFn: async () => {
             const res = await axios.get(
                 `http://www.themealdb.com/api/json/v1/1/categories.php`
