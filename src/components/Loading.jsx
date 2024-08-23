@@ -6,7 +6,7 @@ const Loading = () => {
         <>
             <div className="min-h-[55svh] flex justify-center items-center">
                 <div className="flex flex-col items-center gap-2">
-                    <div className="loading-icon-animate w-[8vw]">
+                    <div className="loading-icon-animate w-[5vw]">
                         <img
                             className="max-w-[100%] object-cover"
                             src={burger}
