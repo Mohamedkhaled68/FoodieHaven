@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 const AppLayout = () => {
     return (
         <>
-            <div className="container mx-auto px-4 md:px-2">
+            <div className="container mx-auto px-0 pl-5 md:px-2">
                 <Navbar />
             </div>
 

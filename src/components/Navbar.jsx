@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import { TfiSearch } from "react-icons/tfi";
 import { CiShoppingCart } from "react-icons/ci";
 import { FaUser } from "react-icons/fa";
+import { Example } from "./Example";
 
 const Navbar = () => {
     const user = null;
@@ -12,7 +13,7 @@ const Navbar = () => {
     };
     return (
         <>
-            <nav>
+            <nav className="relative">
                 <div className="flex justify-between items-center || py-4 || md:px-0">
                     <Link
                         to={"/"}
@@ -86,8 +87,8 @@ const Navbar = () => {
                             </>
                         )}
                     </div>
-                    <div className="md:hidden || cursor-pointer">
-                        <FaBurger size={25} color="#F76927" />
+                    <div className="md:hidden bg-green-300 || cursor-pointer">
+                        <Example />
                     </div>
                 </div>
             </nav>
@@ -95,4 +96,7 @@ const Navbar = () => {
     );
 };
 
+{
+    /* <FaBurger size={25} color="#F76927" /> */
+}
 export default Navbar;

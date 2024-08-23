@@ -67,16 +67,6 @@
     animation: loading-icon 1.5s infinite;
 }
 
-
-
-
-
-
-
-
-
-
-
 .loader {
     position: relative;
 }
@@ -109,4 +99,62 @@
     100% {
         content: "...";
     }
+}
+
+.exact-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100svh;
+    width: 300px;
+    z-index: 1000;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+}
+
+.exact-button {
+    outline: none;
+    border: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.exact-ul,
+.exact-ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.exact-ul {
+    padding: 40px;
+    position: absolute;
+    top: 100px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.exact-ul li {
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
