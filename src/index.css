@@ -37,7 +37,7 @@
 }
 
 .bouncing-element {
-    animation: bounce 1.5s infinite;
+    animation: bounce 0.8s infinite;
 }
 
 @keyframes loading-icon {
@@ -154,4 +154,9 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+
+form .formGroup {
+    display: flex;
+    flex-direction: column;
 }

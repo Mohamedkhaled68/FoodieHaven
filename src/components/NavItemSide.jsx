@@ -1,6 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const variants = {
     open: {
@@ -19,16 +19,24 @@ const variants = {
     },
 };
 
-export const NavItemSide = ({ path, title }) => {
+export const NavItemSide = ({ path, title, toggle }) => {
+    const navigate = useNavigate();
+    const handleClick = () => {
+        toggle();
+        navigate(path);
+    };
     return (
         <motion.li
             variants={variants}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
         >
-            <NavLink className="text-white font-anton text-4xl tracking-widest" to={path}>
+            <div
+                className="text-white font-anton text-4xl tracking-widest"
+                onClick={handleClick}
+            >
                 {title}
-            </NavLink>
+            </div>
         </motion.li>
     );
 };

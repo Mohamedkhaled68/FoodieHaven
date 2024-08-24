@@ -23,7 +23,9 @@ const Menu = () => {
                             </h1>
                             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 justify-items-center gap-5 || py-[2rem]">
                                 {cate.meals.map((meal) => {
-                                    return <MealCard key={meal.id} {...meal} />;
+                                    return (
+                                        <MealCard key={meal.id} meal={meal} />
+                                    );
                                 })}
                             </div>
                         </div>

@@ -5,9 +5,7 @@ const useGetMenuCategories = () => {
     const { data, error, isLoading } = useQuery({
         queryKey: ["menu-categories"],
         queryFn: async () => {
-            const res = await axios.get(
-                `http://www.themealdb.com/api/json/v1/1/categories.php`
-            );
+            const res = await axios.get(`src/utils/menuCategories.json`);
             return res.data;
         },
     });
@@ -16,3 +14,5 @@ const useGetMenuCategories = () => {
 };
 
 export default useGetMenuCategories;
+
+// http://www.themealdb.com/api/json/v1/1/categories.php

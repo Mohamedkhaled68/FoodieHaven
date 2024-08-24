@@ -30,12 +30,13 @@ const paths = [
     },
 ];
 
-export const Navigation = () => (
+export const Navigation = ({ toggle }) => (
     <motion.ul className="exact-ul" variants={variants}>
         {itemIds.map((i) => (
             <NavItemSide
                 path={paths[i].path}
                 title={paths[i].pathTitle}
+                toggle={toggle}
                 key={i}
             />
         ))}

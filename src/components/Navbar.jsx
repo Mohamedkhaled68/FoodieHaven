@@ -1,15 +1,17 @@
 import React from "react";
-import { FaBurger } from "react-icons/fa6";
 import { Link, NavLink } from "react-router-dom";
 import { TfiSearch } from "react-icons/tfi";
 import { CiShoppingCart } from "react-icons/ci";
 import { FaUser } from "react-icons/fa";
 import { Example } from "./Example";
+import useCartStore from "../store/cartStore";
 
 const Navbar = () => {
+    const { cart } = useCartStore();
+
     const user = null;
     const styles = {
-        btns: "px-3 py-1 || rounded-3xl || border border-accent || text-accent text-base || font-semibold",
+        btns: "px-3 py-1 || rounded-3xl || border border-accent || text-accent text-base || font-semibold || hover:bg-accent hover:text-white duration-300",
     };
     return (
         <>
@@ -70,7 +72,9 @@ const Navbar = () => {
                             className="cart || relative || cursor-pointer"
                         >
                             <CiShoppingCart size={30} />
-                            <span className="absolute top-0 right-0 || w-[6px] h-[6px] || rounded-full || bg-red-600" />
+                            {cart.length > 0 && (
+                                <span className="absolute top-0 right-0 || w-[6px] h-[6px] || rounded-full || bg-red-600" />
+                            )}
                         </Link>
                         {user ? (
                             <>
@@ -81,7 +85,12 @@ const Navbar = () => {
                         ) : (
                             <>
                                 <div className="flex items-center gap-2">
-                                    <Link className={styles.btns}>Signup</Link>
+                                    <Link
+                                        to={"/register"}
+                                        className={styles.btns}
+                                    >
+                                        Signup
+                                    </Link>
                                     <Link className={styles.btns}>Login</Link>
                                 </div>
                             </>
@@ -96,7 +105,4 @@ const Navbar = () => {
     );
 };
 
-{
-    /* <FaBurger size={25} color="#F76927" /> */
-}
 export default Navbar;

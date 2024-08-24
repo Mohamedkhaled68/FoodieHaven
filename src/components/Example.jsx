@@ -39,7 +39,7 @@ export const Example = () => {
             className="exact-nav"
         >
             <motion.div className="background bg-accent" variants={sidebar} />
-            <Navigation />
+            <Navigation toggle={() => toggleOpen()}/>
             <MenuToggle toggle={() => toggleOpen()} />
         </motion.nav>
     );

@@ -19,9 +19,9 @@ const App = () => {
                         <Route path="/profile" element={<Profile />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/cart" element={<Cart />} />
-                        <Route path="/sign-in" element={<SignIn />} />
-                        <Route path="/register" element={<Register />} />
                     </Route>
+                    <Route path="/sign-in" element={<SignIn />} />
+                    <Route path="/register" element={<Register />} />
                 </Routes>
                 {/* <Footer /> */}
             </QueryClientProvider>
